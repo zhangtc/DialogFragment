@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog_common"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="21dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lineHeight="22dp"
+            android:maxLines="2"
+            android:textSize="16sp"
+            tools:text="在GoMap地图上未找到任何结果" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="close"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:cornerRadius="20dp" />
+
+
+</LinearLayout>
